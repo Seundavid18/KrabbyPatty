@@ -1,0 +1,155 @@
+:root {
+  --primary: #dfd842;
+  --secondary: #8B0000;
+  --accent: #FFD700;
+  --logo-cn: #333333;
+  --text-light: #FFFFFF;
+  --text-dark: #333333;
+  --menu-bg: #000000;
+  --yellow-bg: #FFD700;
+
+  --font-main: 'Red Rose', cursive;
+  --font-bold: 'Red Rose', cursive; /* 700 weight */
+  --font-decorative: 'Red Rose', cursive; /* For special text */
+}
+
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  min-height: 100vh;
+  /* background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20c-2-2-6-8-6-13s3-7 6-7 6 3 6 7-4 11-6 13zm0 0c2 2 8 6 13 6s7-3 7-6-3-6-7-6-11 4-13 6zm0 0c-2 2-6 8-6 13s3 7 6 7 6-3 6-7-4-11-6-13zm0 0c2-2 8-6 13-6s7 3 7 6-3 6-7 6-11-4-13-6z' fill='%23ff6b00' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.logo-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: 3px solid var(--logo-cn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.header h1 {
+  font-family: 'Pacifico', 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 3.2rem;
+  font-style: italic;
+  margin: 5px 0 0;
+  color: var(--text-dark);
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.header h2 {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 10px;
+  color: var(--text-dark);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu {
+  background-color: var(--menu-bg);
+  padding: 30px; /* Increased padding */
+  border-radius: 15px;
+  border: 3px solid var(--primary);
+  color: var(--text-light);
+  font-size: 1.2rem; /* Base font size increased */
+  font-family: var(--font-main);
+}
+
+.menu h3 {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  color: var(--primary);
+  margin: 25px 0 15px; /* Increased spacing */
+  padding-bottom: 8px;
+  border-bottom: 2px dashed var(--primary);
+  font-size: 2.6rem; /* Larger section headers */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0; /* More space between sections */
+}
+
+.menu li {
+  padding: 14px 0; /* Taller list items */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 1.7rem; /* Larger text */
+  line-height: 1.5; /* Better readability */
+}
+
+.price {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2.3rem; /* Matching size */
+  margin-left: 15px; /* More space between item and price */
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .menu h3 {
+    font-size: 1.4rem;
+    margin: 20px 0 12px;
+  }
+  
+  .menu li {
+    padding: 12px 0;
+    font-size: 1.15rem;
+  }
+  
+  .price {
+    font-size: 1.15rem;
+  }
+}
