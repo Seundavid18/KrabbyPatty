@@ -18,7 +18,7 @@ const Menu = () => {
         <ul>
           <li><span>King Size Fries</span><span className="price">4,000$</span></li>
           <li><span>Queen Size Fries</span><span className="price">3,200$</span></li>
-          <li><span>Saya Loaded Fries</span><span className="price">6,000$</span></li>
+          <li><span>Suya Loaded Fries</span><span className="price">6,000$</span></li>
           <li><span>Chicken Loaded Fries</span><span className="price">7,000$</span></li>
           <li><span>Super Loaded Fries</span><span className="price">10,500$</span></li>
         </ul>
@@ -71,8 +71,6 @@ const Menu = () => {
       <section>
         <h3>BEVERAGES</h3>
         <ul>
-          <li><span>Water</span><span className="price">300$</span></li>
-          <li><span>Soda</span><span className="price">500$</span></li>
           <li><span>Lemonade</span><span className="price">2,000$</span></li>
           <li><span>Iced Chocolate</span><span className="price">1,500$</span></li>
           <li><span>Iced Coffee</span><span className="price">2,000$</span></li>
@@ -83,7 +81,7 @@ const Menu = () => {
       <section>
         <h3>TOPPINGS</h3>
         <ul>
-          <li><span>Whipped Cream</span><span className="price">500$</span></li>
+          <li><span>Whipped Cream</span><span className="price">1000$</span></li>
           <li><span>Chocolate Crisps</span><span className="price">500$</span></li>
           <li><span>Caramel Cream</span><span className="price">500$</span></li>
           <li><span>Chocolate Cream</span><span className="price">500$</span></li>
